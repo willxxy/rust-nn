@@ -9,9 +9,7 @@ Tested on macOS Sonoma version 14.5, Apple M2 Max, Macbook Pro and rustc version
 2. `cd rust-nn`
 3. `cargo run`
 
-Note 1: Make sure to have [rust installed](https://rustup.rs/).
-
-Note 2: The matrices created for GPU is done through burn and the matrices created for CPU is done through ndarray. Additionally, the .matmul() operation for burn and .dot() operation for ndarray are a bit different so this doesn't make it a completely fair comparison...
+Note: Make sure to have [rust installed](https://rustup.rs/).
 
 ## Current Examples
 
@@ -25,6 +23,7 @@ Current examples include:
 
 3. `gpu_vs_cpu_mm.rs` - Testing GPU vs CPU performance times for 1000x1000 matrix multiplication for 100 iterations.
 
+Note: The matrices created for GPU is done through burn and the matrices created for CPU is done through ndarray. Additionally, the .matmul() operation for burn and .dot() operation for ndarray are a bit different so this doesn't make it a completely fair comparison...
 
 ## GPU vs CPU Performance
 
