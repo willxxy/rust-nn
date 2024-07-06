@@ -11,11 +11,10 @@ type BackendGpu = Wgpu;
 pub fn run() {
     let device = Default::default();
     
-    // Parameters
     const MATRIX_SIZE: usize = 1000;
     const ITERATIONS: usize = 100;
 
-    // GPU Operations
+    // GPU
     let tensor_1_gpu = Tensor::<BackendGpu, 2>::random(
         Shape::new([MATRIX_SIZE, MATRIX_SIZE]),
         Distribution::Uniform(0.0, 1.0),
@@ -37,11 +36,9 @@ pub fn run() {
     println!("GPU duration: {:?} per iteration", duration_gpu / ITERATIONS as u32);
     println!("GPU duration: {:?} for {:?} iterations", duration_gpu, ITERATIONS as u32);
 
-    // CPU Operations
+    // CPU
     let array_1_cpu = Array::<f32, _>::random((MATRIX_SIZE, MATRIX_SIZE), Uniform::new(0.0, 1.0));
     let array_2_cpu = Array::<f32, _>::random((MATRIX_SIZE, MATRIX_SIZE), Uniform::new(0.0, 1.0));
-
-
 
     let start_cpu = Instant::now();
     for _ in 0..ITERATIONS {
