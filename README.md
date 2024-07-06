@@ -19,7 +19,7 @@ All examples are under `./src/examples`
 
 Current examples include:
 
-1. `create_tensors.rs` - Simple tensor creation and addition provided in the [burn book tutorial](https://burn.dev/book/getting-started.html)
+1. `create_tensors.rs` - Simple tensor creation and addition provided in the [burn book tutorial](https://burn.dev/book/getting-started.html).
 
 2. `gpu_vs_cpu_add.rs` - Testing GPU vs CPU performance times for 1000x1000 matrix addition for 100 iterations.
 
@@ -43,3 +43,7 @@ Note that there is no warmup for the GPU.
 |--------|------------------------|-----------------------------|
 | **GPU** | 321.857µs              | 32.18575ms                  |
 | **CPU** | 2.09207541s           | 209.207541041s              |
+
+
+## TODO
+[] Create MNIST tutorial.
