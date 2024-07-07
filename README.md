@@ -48,6 +48,6 @@ Note that there is no warmup for the GPU.
 
 
 ## TODO
-[ ] Switch to tch-rs
-[ ] Create MNIST tutorial.
+- [ ] Switch to tch-rs
+- [ ] Create MNIST tutorial.
 
