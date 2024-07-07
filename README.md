@@ -2,6 +2,9 @@
 
 Exploration of deep learning through rust, more specifically through [tracel-ai's burn deep learning framework](https://github.com/tracel-ai/burn).
 
+After some experimentation, found that [tch-rs](https://github.com/LaurentMazare/tch-rs) may be better for now (more stable).
+So will switch the focus to that.
+
 Tested on macOS Sonoma version 14.5, Apple M2 Max, Macbook Pro and rustc version 1.79.0.
 
 ## Usage
@@ -45,4 +48,6 @@ Note that there is no warmup for the GPU.
 
 
 ## TODO
-[] Create MNIST tutorial.
+[ ] Switch to tch-rs
+[ ] Create MNIST tutorial.
+
