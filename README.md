@@ -10,7 +10,7 @@ Tested on macOS Sonoma version 14.5, Apple M2 Max, Macbook Pro and rustc version
 ## Usage
 1. `git clone https://github.com/willxxy/rust-nn.git`
 2. `cd rust-nn`
-3. `cargo run`
+3. `cargo run` to run all examples. Run `cargo run -- -e mm` for matrix multiplication. The other examples are included in the section.
 
 Note: Make sure to have [rust installed](https://rustup.rs/).
 
@@ -20,11 +20,11 @@ All examples are under `./src/examples`
 
 Current examples include:
 
-1. `create_tensors.rs` - Simple tensor creation and addition provided in the [burn book tutorial](https://burn.dev/book/getting-started.html).
+1. `create_tensors.rs` (create) - Simple tensor creation and addition provided in the [burn book tutorial](https://burn.dev/book/getting-started.html).
 
-2. `gpu_vs_cpu_add.rs` - Testing GPU vs CPU performance times for 1000x1000 matrix addition for 100 iterations.
+2. `gpu_vs_cpu_add.rs` (add) - Testing GPU vs CPU performance times for 1000x1000 matrix addition for 100 iterations.
 
-3. `gpu_vs_cpu_mm.rs` - Testing GPU vs CPU performance times for 1000x1000 matrix multiplication for 100 iterations.
+3. `gpu_vs_cpu_mm.rs` (mm) - Testing GPU vs CPU performance times for 1000x1000 matrix multiplication for 100 iterations.
 
 Note: The matrices created for GPU is done through burn and the matrices created for CPU is done through ndarray. Additionally, the .matmul() operation for burn and .dot() operation for ndarray are a bit different so this doesn't make it a completely fair comparison...
 
