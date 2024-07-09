@@ -5,8 +5,8 @@ use clap::{Arg, Command};
 fn main() {
     let matches = Command::new("Rust NN Examples")
         .version("1.0")
-        .author("Your Name <your.email@example.com>")
-        .about("Runs different Rust NN examples")
+        .author("William Han wjhan@andrew.cmu.edu")
+        .about("Runs different examples for deep learning in Rust")
         .arg(Arg::new("example")
             .short('e')
             .long("example")
